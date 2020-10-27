@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual.length !== expected.length) {
     console.log(`:( Assertion Failed: ${actual} !== ${expected}`);
     return;
@@ -15,7 +15,7 @@ const eqArrays = function(actual, expected) {
 };
 
 // Test assertion cases
-eqArrays([1, 2, 3], [1, 2, 3]); // => should PASS
-eqArrays([1, 2, 3], [3, 2, 1]); // => should FAIL
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
-eqArrays(["1", "2", "3"], ["1", "2", 3]); // => should FAIL
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should FAIL
