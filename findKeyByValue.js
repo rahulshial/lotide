@@ -11,8 +11,6 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(searchObject, keySearch) {
 
   for (const key of Object.keys(searchObject)) {
-    console.log(searchObject[key]);
-    console.log(key);
     if (searchObject[key] === keySearch) {
       return key;
     }
