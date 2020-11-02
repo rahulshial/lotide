@@ -17,22 +17,43 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
 
+// e6 shorthand property values
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  eqArrays: eqArrays,
-  assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without
+  head,
+  tail,
+  middle,
+  eqArrays,
+  assertEqual,
+  assertArraysEqual,
+  assertObjectsEqual,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  flatten,
+  countLetters,
+  countOnly,
+  letterPositions,
+  map,
+  takeUntil,
+  without
 };
+
+// module.exports = {
+//   head:   head,
+//   tail:   tail,
+//   middle: middle,
+//   eqArrays: eqArrays,
+//   assertEqual: assertEqual,
+//   assertArraysEqual: assertArraysEqual,
+//   assertObjectsEqual: assertObjectsEqual,
+//   eqObjects: eqObjects,
+//   findKey: findKey,
+//   findKeyByValue: findKeyByValue,
+//   flatten: flatten,
+//   countLetters: countLetters,
+//   countOnly: countOnly,
+//   letterPositions: letterPositions,
+//   map: map,
+//   takeUntil: takeUntil,
+//   without: without
+// };
