@@ -5,8 +5,8 @@
 // For arrays with an even number of elements, an array containing the two elements in the middle should be returned
 
 // ACTUAL FUNCTION
+
 const middle = function(array) {
-  //...
   let returnArray = [];
   let midIndex = 0;
   
@@ -27,37 +27,6 @@ const middle = function(array) {
   return returnArray;
 };
 
-const assertArraysEqual = function(actual, expected) {
-
-  if (eqArrays(actual, expected)) {
-    console.log(`:) Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`:( Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false;
-  } else {
-    for (let i = 0; i < actual.length; i++) {
-      if (actual[i] !== expected[i]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
-
-// TEST CODE
-//
-
-console.log(assertArraysEqual(middle([1]), [])); // => []
-console.log(assertArraysEqual((middle([1, 2])), [])); // => []
-console.log(assertArraysEqual((middle([1, 2, 3])), [2])); // => [2]
-console.log(assertArraysEqual((middle([1, 2, 3, 4, 5])), [3])); // => [3]
-console.log(assertArraysEqual((middle([1, 2, 3, 4])), [2, 3])); // => [2, 3]
-console.log(assertArraysEqual((middle([1, 2, 3, 4, 5, 6])), [3, 4])); // => [3, 4]
-
+module.exports = middle;
 
 
