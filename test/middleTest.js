@@ -1,5 +1,5 @@
-// const middle = require('../middle');
-import {middle} from '../middle.js';
+const middle = require('../middle');
+// import {middle} from '../middle.js';
 const assert = require('chai').assert;
 
 describe("#middle", () => {
