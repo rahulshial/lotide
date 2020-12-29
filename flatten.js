@@ -17,5 +17,6 @@ const flatten = function(array) {
   return returnArray;
 };
 
+console.log(flatten([['a', 1], ['b', 2], ['c', [['d', [['e', 5], ['f', 6]]]]]]));
 
 module.exports = flatten;
